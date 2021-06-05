@@ -1,4 +1,5 @@
 from django.db.models import Count, Sum
+from django.http import HttpResponse
 from django.shortcuts import render
 from rest_framework import generics
 from rest_framework.generics import get_object_or_404
@@ -9,6 +10,10 @@ from django_filters.rest_framework import DjangoFilterBackend
 from finances.serializers import *
 from finances.models import *
 from finances.service import *
+
+
+def blanc(request):
+    return HttpResponse('Hello there!')
 
 
 # use this to create new user

@@ -19,7 +19,8 @@ from .yasg import urlpatterns as doc_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/finances/', include('finances.urls'))
+    path('api/v1/finances/', include('finances.urls')),
+    path('', include('finances.urls'))
 ]
 
 urlpatterns += doc_urls

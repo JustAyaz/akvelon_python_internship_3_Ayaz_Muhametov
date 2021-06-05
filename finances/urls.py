@@ -3,6 +3,8 @@ from finances.views import *
 
 
 urlpatterns = [
+    path('', blanc),
+
     path('user/create/', UserCreateView.as_view()),
     path('user/info/<int:pk>/', UserRUDView.as_view()),
     path('transaction/create/', TransactionCreateView.as_view()),

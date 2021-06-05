@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-rizr!gk=08#dtg#ul(8u-c$a6s1d3t#u&lsmb4)y45!gm@z#4a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

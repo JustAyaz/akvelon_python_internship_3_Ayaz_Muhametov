@@ -32,6 +32,7 @@ class TransactionCreateView(generics.CreateAPIView):
     serializer_class = TransactionDetailSerializer
 
 
+# use this to retrieve/update/destroy information about transaction
 class TransactionRUDView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = TransactionDetailSerializer
     queryset = Transaction.objects.all()

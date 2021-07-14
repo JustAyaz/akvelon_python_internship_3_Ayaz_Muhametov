@@ -13,7 +13,7 @@ from finances.service import *
 
 
 def blanc(request):
-    return HttpResponse('Hello there!')
+    return HttpResponse('Hello there! Go to /swagger to see everything that I can do :)')
 
 
 # use this to create new user
